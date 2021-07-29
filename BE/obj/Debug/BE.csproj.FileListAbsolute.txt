@@ -1,0 +1,12 @@
+C:\Users\רעות באום\source\repos\WPFProject\BE\bin\Debug\BE.dll.config
+C:\Users\רעות באום\source\repos\WPFProject\BE\bin\Debug\BE.dll
+C:\Users\רעות באום\source\repos\WPFProject\BE\bin\Debug\BE.pdb
+C:\Users\רעות באום\source\repos\WPFProject\BE\bin\Debug\EntityFramework.dll
+C:\Users\רעות באום\source\repos\WPFProject\BE\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\רעות באום\source\repos\WPFProject\BE\bin\Debug\EntityFramework.xml
+C:\Users\רעות באום\source\repos\WPFProject\BE\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\רעות באום\source\repos\WPFProject\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\רעות באום\source\repos\WPFProject\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\רעות באום\source\repos\WPFProject\BE\obj\Debug\BE.csproj.CopyComplete
+C:\Users\רעות באום\source\repos\WPFProject\BE\obj\Debug\BE.dll
+C:\Users\רעות באום\source\repos\WPFProject\BE\obj\Debug\BE.pdb
