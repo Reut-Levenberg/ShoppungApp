@@ -13,6 +13,7 @@ namespace BL
     {
         SoppingContext soppingContext;
 
+
         public ClassExample() 
         {
             soppingContext = new SoppingContext();
