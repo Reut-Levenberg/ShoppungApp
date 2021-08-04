@@ -14,25 +14,25 @@ namespace DAL
         {
             IList<Product> defaultProducts = new List<Product>();
 
-            defaultProducts.Add(new Product() { Category = BE.Enums.categories.Food, Name = "Milk", Id = 1, Price = 5.90 });
-            defaultProducts.Add(new Product() { Category = BE.Enums.categories.Food, Name = "Bread", Id = 2, Price = 7.90 });
-            defaultProducts.Add(new Product() { Category = BE.Enums.categories.Food, Name = "Eggs", Id = 3, Price = 15 });
+            defaultProducts.Add(new Product() { category = BE.Enums.categories.Food, name = "Milk", Id = 1, price = 5.90 });
+            defaultProducts.Add(new Product() { category = BE.Enums.categories.Food, name = "Bread", Id = 2, price = 7.90 });
+            defaultProducts.Add(new Product() { category = BE.Enums.categories.Food, name = "Eggs", Id = 3, price = 15 });
 
             context.Products.AddRange(defaultProducts);
 
 
             IList<SoppingList> defaultShoppingLists = new List<SoppingList>();
 
-            defaultShoppingLists.Add(new SoppingList { Id = 1, Products = new List<Product>() { defaultProducts[0], defaultProducts[1], defaultProducts[2] } });
+            defaultShoppingLists.Add(new SoppingList { Id = 1, products = new List<Product>() { defaultProducts[0], defaultProducts[1], defaultProducts[2] } });
 
             context.SoppingLists.AddRange(defaultShoppingLists);
 
 
-            IList<User> defaultUsers = new List<User>();
+           // IList<User> defaultUsers = new List<User>();
 
-            defaultUsers.Add(new User{ Name="Yair Cohen" , Id = 1, SoppingLists=new List<SoppingList>() { defaultShoppingLists[0] } });
+           // defaultUsers.Add(new User{ Name="Yair Cohen" , Id = 1, SoppingLists=new List<SoppingList>() { defaultShoppingLists[0] } });
 
-            context.Users.AddRange(defaultUsers);
+           // context.Users.AddRange(defaultUsers);
 
 
             base.Seed(context);

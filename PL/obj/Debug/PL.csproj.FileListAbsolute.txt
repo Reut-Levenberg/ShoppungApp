@@ -27,3 +27,13 @@ C:\Users\רעות באום\source\repos\WPFProject\PL\bin\Debug\EntityFramework.
 C:\Users\רעות באום\source\repos\WPFProject\PL\bin\Debug\BL.dll.config
 C:\Users\רעות באום\source\repos\WPFProject\PL\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\רעות באום\source\repos\WPFProject\PL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\רעות באום\source\repos\WPFProject\PL\obj\Debug\AnalysisShop.g.cs
+C:\Users\רעות באום\source\repos\WPFProject\PL\obj\Debug\EditShop.g.cs
+C:\Users\רעות באום\source\repos\WPFProject\PL\obj\Debug\lodding.g.cs
+C:\Users\רעות באום\source\repos\WPFProject\PL\obj\Debug\NewShop.g.cs
+C:\Users\רעות באום\source\repos\WPFProject\PL\obj\Debug\reccomender.g.cs
+C:\Users\רעות באום\source\repos\WPFProject\PL\obj\Debug\AnalysisShop.baml
+C:\Users\רעות באום\source\repos\WPFProject\PL\obj\Debug\EditShop.baml
+C:\Users\רעות באום\source\repos\WPFProject\PL\obj\Debug\lodding.baml
+C:\Users\רעות באום\source\repos\WPFProject\PL\obj\Debug\NewShop.baml
+C:\Users\רעות באום\source\repos\WPFProject\PL\obj\Debug\reccomender.baml

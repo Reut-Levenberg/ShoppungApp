@@ -15,12 +15,9 @@ namespace BE
         public int Id { get; set; }
 
         [MaxLength(25)]
-        private string name;
+        public string name { get; set; }
 
-        private List<SoppingList> soppingLists;
+        //public List<Purchase> Purchases { get; set; }
 
-        //public int Uid { get => Id; set => Id = value; }
-        public string Name { get => name; set => name = value; }
-        public List<SoppingList> SoppingLists { get => soppingLists; set => soppingLists = value; }
     }
 }
