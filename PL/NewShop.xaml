@@ -3,10 +3,52 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:local="clr-namespace:PL"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="myStyle.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
     <Grid>
-            
+        <Border
+
+    ClipToBounds="True" Margin="105,42,108,46">
+            <Grid x:Name="innerGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition
+          Height="*" />
+                    <RowDefinition
+          Height="Auto" />
+                </Grid.RowDefinitions>
+                <ListBox
+        x:Name="FruitListBox" BorderThickness="2" Margin="127,54,130,66">
+                    <ListBoxItem
+          Content="Apple" />
+                    <ListBoxItem
+          Content="Banana" />
+                    <ListBoxItem
+          Content="Pear" />
+                </ListBox>
+
+                <Button x:Name="finisfShopping"
+          Margin="150,278,150,34"
+          Content="Done!" Click="finisfShopping_Click" />
+                <Button x:Name="addItem" Background="#FF6EA41B" IsEnabled="True"
+        Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+        VerticalAlignment="Bottom"
+        HorizontalAlignment="Right"
+        Margin="0,0,130,113"
+        Content="{materialDesign:PackIcon Kind=Plus, Size=32}" RenderTransformOrigin="-2.938,-0.388" Height="45" Width="43"  Click="addItem_Click"/>
+            </Grid>
+        </Border>
     </Grid>
 </UserControl>

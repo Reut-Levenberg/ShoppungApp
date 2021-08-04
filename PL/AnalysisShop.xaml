@@ -6,7 +6,39 @@
              xmlns:local="clr-namespace:PL"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="myStyle.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
     <Grid>
-            
+        <ListBox
+  Style="{StaticResource MaterialDesignChoiceChipListBox}"
+  x:Name="filterBy" Margin="166,82,330,275">
+            <ListBoxItem
+    Content="Item" IsSelected="True" />
+            <ListBoxItem
+    Content="Shop" />
+            <ListBoxItem
+    Content="Category" />
+            <ListBoxItem
+    Content="Cost" />
+        </ListBox>
+        <ListBox
+  Style="{StaticResource MaterialDesignChoiceChipListBox}"
+  x:Name="TimeBy" Margin="473,82,105,275">
+            <ListBoxItem
+    Content="Day" IsSelected="True" />
+            <ListBoxItem
+    Content="Week" />
+            <ListBoxItem
+    Content="Month" />
+        </ListBox>
     </Grid>
 </UserControl>

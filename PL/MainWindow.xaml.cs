@@ -21,11 +21,12 @@ namespace PL
     /// </summary>
     public partial class MainWindow : Window
     {
-        ClassExample c;
+        //ClassExample c;
+        //public System.Collections.ObjectModel.Collection<System.Windows.ResourceDictionary> MergedDictionaries { get; }
         public MainWindow()
         {
             InitializeComponent();
-            c = new ClassExample();
+            //c = new ClassExample();
         }
     }
 }

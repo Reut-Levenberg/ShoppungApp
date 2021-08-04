@@ -3,10 +3,61 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:PL"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
         
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="myStyle.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <!--<local:lodding HorizontalAlignment="Left" Height="196" Margin="145,115,0,0" VerticalAlignment="Top" Width="524"/>-->
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="430" Margin="-61,10,607,10" Width="254" >
+            <StackPanel
+               Margin="29,22,0,356"
+    Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ToggleButton
+      Style="{DynamicResource MaterialDesignHamburgerToggleButton}" Click="ToggleButton_Click"/>
+                <TextBlock
+      VerticalAlignment="Center"
+      Text="Menu" />
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="openMenu" Margin="14,72,0,10" Visibility="Hidden" Background="AntiqueWhite">
+            <Menu x:Name="menu" Background="AntiqueWhite"
+  IsMainMenu="False" Margin="0,0,-104,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="395">
+
+                <MenuItem Name="home"
+      Header="Home"
+      Icon="{materialDesign:PackIcon Kind=HomeOutline}" Click="home_Click"></MenuItem>
+                <MenuItem
+      Header="New Shopping" Name="new"
+      Icon="{materialDesign:PackIcon Kind=CartOutline}" Click="new_Click" Width="293"></MenuItem>
+                <MenuItem
+      Header="Edit Shopping" Name="edit"
+      Icon="{materialDesign:PackIcon Kind=FileEditOutline}" Click="edit_Click"></MenuItem>
+                <MenuItem
+      Header="My shopping analysis" Name="analysis"
+      Icon="{materialDesign:PackIcon Kind=Poll}" Click="analysis_Click" Width="394"></MenuItem>
+                <MenuItem
+      Header="Creating a new shopping list" Name="list"
+      Icon="{materialDesign:PackIcon Kind=CartArrowUp}" Click="list_Click" Width="722"></MenuItem>
+
+                <MenuItem
+      Header="Exit" x:Name="exit"
+      Icon="{materialDesign:PackIcon Kind=ExitToApp}" Click="exit_Click" />
+                <Separator />
+            </Menu>
+        </Grid>
+
     </Grid>
 </Window>

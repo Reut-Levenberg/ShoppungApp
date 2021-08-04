@@ -24,5 +24,15 @@ namespace PL
         {
             InitializeComponent();
         }
+
+        private void finisfShopping_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void addItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
