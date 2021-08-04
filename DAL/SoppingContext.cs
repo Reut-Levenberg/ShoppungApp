@@ -13,10 +13,13 @@ namespace DAL
         public DbSet<Product> Products { get; set; }
         public DbSet<SoppingList> SoppingLists { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<store> stores { get; set; }
+        public DbSet<Purchase> Purchases { get; set; }
+        
         public SoppingContext() : base("ShoppindDB")
         {
             Database.SetInitializer(new ShoppingDBInitializer());
         }
-        
+
     }
 }

@@ -14,9 +14,7 @@ namespace BE
         [Key]
         public int Id { get; set; }
 
-        private List<Product> products;
+        public List<Product> products { get; set; }
 
-       // public int Lid { get => Id; set => Id = value; }
-        public List<Product> Products { get => products; set => products = value; }
     }
 }
