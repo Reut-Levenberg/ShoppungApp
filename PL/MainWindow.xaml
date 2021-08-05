@@ -19,7 +19,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-    <Grid>
+    <Grid x:Name="mainGrid">
         <!--<local:lodding HorizontalAlignment="Left" Height="196" Margin="145,115,0,0" VerticalAlignment="Top" Width="524"/>-->
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="430" Margin="-61,10,607,10" Width="254" >
             <StackPanel

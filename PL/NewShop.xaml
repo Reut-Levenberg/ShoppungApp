@@ -29,14 +29,14 @@
                     <RowDefinition
           Height="Auto" />
                 </Grid.RowDefinitions>
-                <ListBox
-        x:Name="FruitListBox" BorderThickness="2" Margin="127,54,130,66">
-                    <ListBoxItem
-          Content="Apple" />
-                    <ListBoxItem
-          Content="Banana" />
-                    <ListBoxItem
-          Content="Pear" />
+                <ListBox ItemsSource="{Binding shopVM}" HorizontalAlignment="Left" Height="207" VerticalAlignment="Top" Width="296" Margin="30,26,0,0">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox Text="{Binding Name}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
                 </ListBox>
 
                 <Button x:Name="finisfShopping"
