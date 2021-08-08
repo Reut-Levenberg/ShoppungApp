@@ -61,6 +61,7 @@ namespace DAL
             }
         }
         public void updataUser(int Id) { }
+
         public void addStore(store store) 
         {
             using (context)
@@ -69,6 +70,7 @@ namespace DAL
                 context.SaveChanges();
             }
         }
+
         public void addPurchase(Purchase purchase ) 
         {
             using (context)

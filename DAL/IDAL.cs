@@ -16,8 +16,8 @@ namespace DAL
         List<SoppingList> allShoppingList();
         void addUser(User user);
         void updataUser(int Id);
-        void addStore();
-        void addPurchase();
+        void addStore(store store);
+        void addPurchase(Purchase purchase);
         List<Purchase> allPurchase();
     }
 }

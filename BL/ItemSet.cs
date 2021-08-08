@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BL
 {
-    class ItemSet
+    public class ItemSet
     {
         public int N; // data items are [0..N-1]
         public int k; // number of items

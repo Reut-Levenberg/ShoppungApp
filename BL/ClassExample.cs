@@ -24,9 +24,9 @@ namespace BL
                // User user1 = new User() { name = "Yair Cohen", soppingLists = new List<SoppingList>() { sp1 }, Id = 1 };
 
                // soppingContext.Users.Add(user1);
-                soppingContext.Products.Add(milk);
-                soppingContext.SoppingLists.Add(sp1);
-                soppingContext.SaveChanges();
+                //soppingContext.Products.Add(milk);
+                //soppingContext.SoppingLists.Add(sp1);
+                //soppingContext.SaveChanges();
 
 
             }

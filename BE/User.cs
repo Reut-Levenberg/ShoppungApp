@@ -17,7 +17,7 @@ namespace BE
         [MaxLength(25)]
         public string name { get; set; }
 
-        //public List<Purchase> Purchases { get; set; }
+        public List<Purchase> Purchases { get; set; }
 
     }
 }

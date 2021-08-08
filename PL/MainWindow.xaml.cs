@@ -21,11 +21,16 @@ namespace PL
     /// </summary>
     public partial class MainWindow : Window
     {
-        ClassExample c;
+        ClassExample c1;
+        AssociationRules a;
+        
         public MainWindow()
         {
             InitializeComponent();
-            c = new ClassExample();
+            c1 = new ClassExample();
+            Class1 c = new Class1();
+            c.dddd();
+
         }
     }
 }

@@ -14,7 +14,7 @@ namespace BE
         [Key]
         public int Id { get; set; }
 
-        public List<Product> products { get; set; }
+        public virtual List<Product> products { get; set; }
 
     }
 }
